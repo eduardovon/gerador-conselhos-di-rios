@@ -6,6 +6,14 @@ const vonselhos=[
     "Seja gentil com todos que encontar!"
 ];
 
-console.log("Arquivo de script carrregado. Array de conselhos pronto.");
-  
+const conselhoTexto = document.getElementById('conselhoTesxto');
+const nocoConsolhoBtn = document.getElementById('novoConselhoBtn')
 
+function gerarConselho() {
+    //BUG INTENCIONAL AQUI
+    const indice = Math.floor(Math.random() *(conselhos.leight + 1));
+
+}
+  
+novoConselhoBtn.addEventListener('click', gerarConselho);
+ 
